@@ -5,7 +5,7 @@ bool MainWindow::verifyGridValue(const size_t new_width, const size_t new_height
 {
     if(new_width < 2 || new_height < 2)
     {
-        QMessageBox::warning(this, "Warning", "Grid width or height cannot be zero.");
+        QMessageBox::warning(this, "Warning", "Grid width or height must be greater than 1.");
         return false;
     }
     if(numb_walls > new_width * new_height)
