@@ -46,7 +46,7 @@ void MainWindow::buttonGenerationHandle()
         if(new_width == grid->width() && new_height == grid->height())
             grid->update(number_walls);
         else
-            grid->build(new_height, new_width, number_walls);
+            grid->build(new_width, new_height, number_walls);
     }
 }
 
